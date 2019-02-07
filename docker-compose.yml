@@ -1,0 +1,9 @@
+version: "3"
+services:
+  www:
+    build: .
+    ports:
+      - 85:80
+    volumes:
+      - ./www:/var/www
+      - ./logs:/var/log/apache2
