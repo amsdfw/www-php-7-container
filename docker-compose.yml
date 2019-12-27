@@ -2,6 +2,7 @@ version: "3"
 services:
   www:
     build: .
+    restart: always
     ports:
       - 85:80
     volumes:
